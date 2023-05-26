@@ -3,6 +3,7 @@ import {classNames} from "shared/lib/helpers";
 import styles from './Sidebar.module.scss'
 import {ThemeSwitcher} from "features/ThemeSwitcher";
 import {Button} from "shared/ui";
+import {LangSwitcher} from "features/LangSwitcher";
 
 interface SidebarProps {
   className?: string
@@ -24,6 +25,7 @@ export const Sidebar: FC<SidebarProps> = ({className}) => {
       <div className={styles.switchers}>
         <Button onClick={toggleCollapse}>{isCollapsed ? 'Open' : 'Close'}</Button>
         <ThemeSwitcher />
+        <LangSwitcher />
       </div>
     </div>
   );
