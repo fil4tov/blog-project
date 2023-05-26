@@ -1,4 +1,5 @@
 type Mods = Record<string, boolean>
+
 export const classNames = (baseClasses: string[], mods: Mods = {}): string => {
   return [
     ...baseClasses.filter(Boolean),
