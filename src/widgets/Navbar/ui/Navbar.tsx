@@ -14,8 +14,8 @@ export const Navbar: FC<NavbarProps> = ({ className }) => {
     <header className={classNames([styles.Navbar, className])}>
       <h2>{t('Блог')}</h2>
       <nav className={styles.links}>
-        <AppLink to='/'>Home</AppLink>
-        <AppLink to='/about'>About</AppLink>
+        <AppLink to='/'>{t('Главная')}</AppLink>
+        <AppLink to='/about'>{t('О нас')}</AppLink>
       </nav>
     </header>
   )
