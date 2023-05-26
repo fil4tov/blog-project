@@ -1,14 +1,15 @@
+import { type FC } from 'react'
+
+import { useTheme } from 'shared/lib/hooks'
+import { classNames } from 'shared/lib/helpers'
+import { AppRouter } from 'app/providers/Router'
+import { Navbar } from 'widgets/Navbar'
+import { Sidebar } from 'widgets/Sidebar'
+
 import './styles/index.scss'
 
-import {useTheme} from "shared/lib/hooks";
-import {classNames} from "shared/lib/helpers";
-import {AppRouter} from "app/providers/Router";
-import {Navbar} from "widgets/Navbar";
-import {Sidebar} from "widgets/Sidebar";
-
-
-const App = () => {
-  const {theme} = useTheme()
+const App: FC = () => {
+  const { theme } = useTheme()
 
   return (
     <div className={classNames(['app', theme])}>
@@ -18,7 +19,7 @@ const App = () => {
         <AppRouter/>
       </main>
     </div>
-  );
-};
+  )
+}
 
-export default App;
+export default App
