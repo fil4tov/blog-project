@@ -4,13 +4,15 @@ import {routerConfig} from "app/providers/Router";
 
 const AppRouter = () => {
   return (
-    <Suspense fallback={<h2>Loading...</h2>}>
-      <Routes>
-        {Object.values(routerConfig).map(({element, path}) => (
-          <Route key={path} element={element} path={path}/>
-        ))}
-      </Routes>
-    </Suspense>
+    <div className='page-content'>
+      <Suspense fallback={<h2>Loading...</h2>}>
+        <Routes>
+          {Object.values(routerConfig).map(({element, path}) => (
+            <Route key={path} element={element} path={path}/>
+          ))}
+        </Routes>
+      </Suspense>
+    </div>
   );
 };
 

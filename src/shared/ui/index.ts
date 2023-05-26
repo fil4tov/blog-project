@@ -1,2 +1,2 @@
-export {Button} from "shared/ui/Button/Button";
-export {AppLink} from "shared/ui/AppLink/AppLink";
+export {Button} from "./Button/Button";
+export {AppLink} from "./AppLink/AppLink";

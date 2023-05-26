@@ -1,4 +1,4 @@
-import React, {FC} from 'react';
+import {FC} from 'react';
 import {classNames} from "shared/lib/helpers";
 import styles from './ThemeSwitcher.module.scss'
 import {useTheme} from "shared/lib/hooks";

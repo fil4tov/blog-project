@@ -1,1 +1,1 @@
-export {useTheme} from "shared/lib/hooks/useTheme";
+export {useTheme} from "./useTheme";

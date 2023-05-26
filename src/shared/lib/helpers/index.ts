@@ -1,1 +1,1 @@
-export {classNames} from "shared/lib/helpers/classNames";
+export {classNames} from "./classNames";

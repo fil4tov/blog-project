@@ -10,5 +10,12 @@
   --font-l: var(--font-size-l) / var(--font-line-l) var(--font-family-main);
 
   //sizes
-  --navbar-height: 50px;
+  --navbar-height: 70px;
+
+  --sidebar-width: 300px;
+  //--sidebar-width-collapsed: max-content;
+  --sidebar-width-collapsed: 100px;
+
+  //animations
+  --transition: .2s ease-in-out
 }
