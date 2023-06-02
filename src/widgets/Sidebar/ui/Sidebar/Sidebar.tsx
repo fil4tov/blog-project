@@ -1,9 +1,9 @@
-import React, { type FC, useState } from 'react'
+import { type FC, useState } from 'react'
 import { classNames } from 'shared/lib/helpers'
-import styles from './Sidebar.module.scss'
 import { ThemeSwitcher } from 'features/ThemeSwitcher'
 import { Button } from 'shared/ui'
 import { LangSwitcher } from 'features/LangSwitcher'
+import styles from './Sidebar.module.scss'
 
 interface SidebarProps {
   className?: string
