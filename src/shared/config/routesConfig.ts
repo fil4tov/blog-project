@@ -1,10 +1,10 @@
 export enum appRoutesNames {
-  // eslint-disable-next-line no-unused-vars
   MAIN = 'main',
-  // eslint-disable-next-line no-unused-vars
-  ABOUT = 'about'
+  ABOUT = 'about',
+  NOT_FOUND = 'notFound'
 }
 export const appRoutesPaths: Record<appRoutesNames, string> = {
   [appRoutesNames.MAIN]: '/',
-  [appRoutesNames.ABOUT]: '/about'
+  [appRoutesNames.ABOUT]: '/about',
+  [appRoutesNames.NOT_FOUND]: '*'
 }

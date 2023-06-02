@@ -30,8 +30,9 @@ module.exports = {
       markupOnly: true,
       onlyAttribute: ['']
     }],
-    'no-unused-vars': 'warn',
-    'max-len': ['error', { ignoreComments: true }]
+    'no-unused-vars': 'off',
+    '@typescript-eslint/no-unused-vars': 'error',
+    'max-len': ['error', { code: 100, ignoreComments: true }]
   },
   globals: {
     __IS_DEV__: true
