@@ -26,8 +26,12 @@ module.exports = {
     '@typescript-eslint/strict-boolean-expressions': 'off',
     'react/button-has-type': 'error',
     '@typescript-eslint/naming-convention': 'off',
-    'i18next/no-literal-string': ['error', { markupOnly: true, onlyAttribute: [''] }],
-    'no-unused-vars': 'warn'
+    'i18next/no-literal-string': ['error', {
+      markupOnly: true,
+      onlyAttribute: ['']
+    }],
+    'no-unused-vars': 'warn',
+    'max-len': ['error', { ignoreComments: true }]
   },
   globals: {
     __IS_DEV__: true
