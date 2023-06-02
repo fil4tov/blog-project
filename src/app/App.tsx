@@ -1,10 +1,10 @@
 import { type FC } from 'react'
 
-import { useTheme } from 'shared/lib/hooks'
-import { classNames } from 'shared/lib/helpers'
 import { AppRouter } from 'app/providers/Router'
 import { Navbar } from 'widgets/Navbar'
 import { Sidebar } from 'widgets/Sidebar'
+import { useTheme } from 'shared/lib/hooks'
+import { classNames } from 'shared/lib/helpers'
 
 import './styles/index.scss'
 
