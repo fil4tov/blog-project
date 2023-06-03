@@ -1,4 +1,4 @@
-import React, { createContext, type FC, useMemo, useState } from 'react'
+import React, {createContext, type FC, ReactNode, useMemo, useState} from 'react'
 
 export enum Theme {
   LIGHT = 'light',
@@ -16,7 +16,11 @@ export const LOCAL_STORAGE_THEME_KEY = 'theme'
 
 const defaultTheme = localStorage.getItem(LOCAL_STORAGE_THEME_KEY) as Theme || Theme.DARK
 
-export const ThemeProvider: FC = ({ children }) => {
+interface ThemeProviderProps {
+  children?: ReactNode
+}
+
+export const ThemeProvider: FC<ThemeProviderProps> = ({ children }) => {
   const [theme, setTheme] = useState<Theme>(defaultTheme)
   const store = useMemo(() => ({ theme, setTheme }), [theme])
 
