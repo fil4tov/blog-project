@@ -27,19 +27,22 @@ module.exports = {
     'i18next'
   ],
   rules: {
-    'react/react-in-jsx-scope': 'off',
     '@typescript-eslint/prefer-nullish-coalescing': 'off',
     '@typescript-eslint/strict-boolean-expressions': 'off',
-    'react/button-has-type': 'error',
     '@typescript-eslint/naming-convention': 'off',
+    '@typescript-eslint/no-unused-vars': 'error',
+    '@typescript-eslint/explicit-function-return-type': 'off',
+    'react/react-in-jsx-scope': 'off',
+    'react/button-has-type': 'error',
+    'no-unused-vars': 'off',
+    'max-len': ['error', {
+      code: 100,
+      ignoreComments: true
+    }],
     'i18next/no-literal-string': ['error', {
       markupOnly: true,
       onlyAttribute: ['']
-    }],
-    'no-unused-vars': 'off',
-    '@typescript-eslint/no-unused-vars': 'error',
-    'max-len': ['error', { code: 100, ignoreComments: true }],
-    '@typescript-eslint/explicit-function-return-type': 'off'
+    }]
   },
   globals: {
     __IS_DEV__: true
