@@ -32,7 +32,8 @@ module.exports = {
     }],
     'no-unused-vars': 'off',
     '@typescript-eslint/no-unused-vars': 'error',
-    'max-len': ['error', { code: 100, ignoreComments: true }]
+    'max-len': ['error', { code: 100, ignoreComments: true }],
+    '@typescript-eslint/explicit-function-return-type': 'off'
   },
   globals: {
     __IS_DEV__: true

@@ -4,5 +4,7 @@
   "Блог": "Blog",
   "О нас": "About",
   "Главная": "Main",
-  "Страница не найдена": "404 Page not found"
+  "Страница не найдена": "404 Page not found",
+  "Ошибка приложения": "Oops, something went wrong, try to reload the application",
+  "Перезагрузить приложение": "Reload"
 }

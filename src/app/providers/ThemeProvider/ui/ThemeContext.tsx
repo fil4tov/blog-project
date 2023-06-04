@@ -1,4 +1,4 @@
-import React, {createContext, type FC, ReactNode, useMemo, useState} from 'react'
+import React, { createContext, type FC, type ReactNode, useMemo, useState } from 'react'
 
 export enum Theme {
   LIGHT = 'light',
