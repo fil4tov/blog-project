@@ -1,9 +1,6 @@
 import React, { createContext, type FC, type ReactNode, useMemo, useState } from 'react'
 
-export enum Theme {
-  LIGHT = 'light',
-  DARK = 'dark'
-}
+export type Theme = 'dark' | 'light'
 
 export interface ThemeContextProps {
   theme?: Theme
@@ -14,7 +11,7 @@ export const ThemeContext = createContext<ThemeContextProps>({})
 
 export const LOCAL_STORAGE_THEME_KEY = 'theme'
 
-const defaultTheme = localStorage.getItem(LOCAL_STORAGE_THEME_KEY) as Theme || Theme.DARK
+const defaultTheme = localStorage.getItem(LOCAL_STORAGE_THEME_KEY) as Theme || 'dark'
 
 interface ThemeProviderProps {
   children?: ReactNode

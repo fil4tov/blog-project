@@ -1,1 +1,1 @@
-export { ThemeContext, ThemeProvider, Theme } from './ui/ThemeContext'
+export { ThemeContext, ThemeProvider, type Theme } from './ui/ThemeContext'

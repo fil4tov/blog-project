@@ -34,6 +34,7 @@ module.exports = {
     '@typescript-eslint/explicit-function-return-type': 'off',
     'react/react-in-jsx-scope': 'off',
     'react/button-has-type': 'error',
+    'react/display-name': 'off',
     'no-unused-vars': 'off',
     'max-len': ['error', {
       code: 100,
