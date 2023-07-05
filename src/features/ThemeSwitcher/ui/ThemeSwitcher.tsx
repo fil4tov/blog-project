@@ -1,5 +1,5 @@
 import { type FC } from 'react'
-import { classNames } from 'shared/lib/helpers'
+import { cls } from 'shared/lib/helpers'
 import { useTheme } from 'shared/lib/hooks'
 import { Button } from 'shared/ui'
 
@@ -15,7 +15,7 @@ export const ThemeSwitcher: FC<ThemeSwitcherProps> = ({ className }) => {
   return (
     <Button
       variant='clear'
-      className={classNames([className])}
+      className={cls([className])}
       onClick={toggleTheme}
     >
       {theme === 'dark' ? <Moon /> : <Sun />}

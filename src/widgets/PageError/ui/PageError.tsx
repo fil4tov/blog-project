@@ -1,5 +1,5 @@
 import { type FC } from 'react'
-import { classNames } from 'shared/lib/helpers'
+import { cls } from 'shared/lib/helpers'
 import styles from './PageError.module.scss'
 import { useTranslation } from 'react-i18next'
 
@@ -15,7 +15,7 @@ export const PageError: FC<PageErrorProps> = ({ className }) => {
   }
 
   return (
-    <div className={classNames([styles.PageError, className])}>
+    <div className={cls([styles.PageError, className])}>
       <h1>{t('Ошибка приложения')}</h1>
       <button
         className={styles.button}

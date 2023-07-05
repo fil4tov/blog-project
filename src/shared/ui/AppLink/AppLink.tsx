@@ -1,5 +1,5 @@
 import { type FC } from 'react'
-import { classNames } from 'shared/lib/helpers'
+import { cls } from 'shared/lib/helpers'
 import styles from './AppLink.module.scss'
 import { Link, type LinkProps } from 'react-router-dom'
 
@@ -20,7 +20,7 @@ export const AppLink: FC<AppLinkProps> = (props) => {
   return (
     <Link
       to={to}
-      className={classNames([className, styles[color]])}
+      className={cls([className, styles[color]])}
       {...otherProps}
     >
       {children}

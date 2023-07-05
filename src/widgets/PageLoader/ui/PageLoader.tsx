@@ -1,5 +1,5 @@
 import { type FC } from 'react'
-import { classNames } from 'shared/lib/helpers'
+import { cls } from 'shared/lib/helpers'
 import styles from './PageLoader.module.scss'
 import { Loader } from 'shared/ui'
 
@@ -9,7 +9,7 @@ interface PageLoaderProps {
 
 export const PageLoader: FC<PageLoaderProps> = ({ className }) => {
   return (
-    <div className={classNames([styles.PageLoader, className])}>
+    <div className={cls([styles.PageLoader, className])}>
       <Loader/>
     </div>
   )

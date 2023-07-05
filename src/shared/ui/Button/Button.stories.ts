@@ -55,3 +55,11 @@ export const ClearLight: Story = {
   },
   decorators: [ThemeDecorator('light')]
 }
+
+export const Round: Story = {
+  args: {
+    variant: 'outlined',
+    children: '>',
+    round: true
+  }
+}

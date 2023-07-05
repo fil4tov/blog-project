@@ -1,1 +1,1 @@
-export { classNames } from './classNames/classNames'
+export { cls } from 'shared/lib/helpers/cls/cls'
