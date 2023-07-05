@@ -9,6 +9,5 @@ describe('Button', () => {
   test('to have class filled', () => {
     render(<Button variant='filled'>test</Button>)
     expect(screen.getByText('test')).toHaveClass('filled')
-    screen.debug()
   })
 })
