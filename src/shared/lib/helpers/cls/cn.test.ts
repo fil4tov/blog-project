@@ -1,17 +1,17 @@
-import { cls } from 'shared/lib/helpers/cls/cls'
+import { cn } from 'shared/lib/helpers/cls/cn'
 
 describe('cls', () => {
   test('only 1st param', () => {
-    expect(cls(['someClass'])).toBe('someClass')
+    expect(cn(['someClass'])).toBe('someClass')
   })
 
   test('only 1st param 2 items', () => {
-    expect(cls(['someClass', 'anotherClass']))
+    expect(cn(['someClass', 'anotherClass']))
       .toBe('someClass anotherClass')
   })
 
   test('with 2 params', () => {
-    expect(cls(['someClass'], {
+    expect(cn(['someClass'], {
       hovered: true,
       hidden: false
     }))

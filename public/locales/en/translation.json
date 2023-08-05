@@ -7,5 +7,6 @@
   "Главная": "Main",
   "Страница не найдена": "404 Page not found",
   "Ошибка приложения": "Oops, something went wrong, try to reload the application",
-  "Перезагрузить приложение": "Reload"
+  "Перезагрузить приложение": "Reload",
+  "Войти": "Sign in"
 }

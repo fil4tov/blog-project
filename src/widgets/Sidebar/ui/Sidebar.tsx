@@ -1,5 +1,5 @@
-import { type FC, useState } from 'react'
-import { cls } from 'shared/lib/helpers'
+import { useState } from 'react'
+import { cn } from 'shared/lib/helpers'
 import { ThemeSwitcher } from 'features/ThemeSwitcher'
 import { AppLink, Button } from 'shared/ui'
 import { LangSwitcher } from 'features/LangSwitcher'
@@ -13,7 +13,7 @@ interface SidebarProps {
   className?: string
 }
 
-export const Sidebar: FC<SidebarProps> = ({ className }) => {
+export const Sidebar = ({ className }: SidebarProps) => {
   const [isCollapsed, setIsCollapsed] = useState(true)
   const { t } = useTranslation()
 
@@ -24,7 +24,7 @@ export const Sidebar: FC<SidebarProps> = ({ className }) => {
   return (
     <div
       data-testid='sidebar'
-      className={cls([styles.Sidebar, className], {
+      className={cn([styles.Sidebar, className], {
         [styles.collapsed]: isCollapsed
       })}
     >

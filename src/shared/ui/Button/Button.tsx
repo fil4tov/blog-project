@@ -1,5 +1,5 @@
-import { type ButtonHTMLAttributes, type FC } from 'react'
-import { cls } from 'shared/lib/helpers'
+import { type ButtonHTMLAttributes } from 'react'
+import { cn } from 'shared/lib/helpers'
 import styles from './Button.module.scss'
 
 type Variant = 'outlined' | 'clear' | 'filled'
@@ -12,7 +12,7 @@ interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   round?: boolean
 }
 
-export const Button: FC<ButtonProps> = (props) => {
+export const Button = (props: ButtonProps) => {
   const {
     className,
     variant = 'outlined',
@@ -36,7 +36,7 @@ export const Button: FC<ButtonProps> = (props) => {
   return (
     <button
       type='button'
-      className={cls(classes, mods)}
+      className={cn(classes, mods)}
       {...otherProps}
     >
       {children}

@@ -1,7 +1,6 @@
-import { type FC } from 'react'
-import { cls } from 'shared/lib/helpers'
-import styles from './AppLink.module.scss'
 import { Link, type LinkProps } from 'react-router-dom'
+import { cn } from 'shared/lib/helpers'
+import styles from './AppLink.module.scss'
 
 type Color = 'primary' | 'secondary'
 interface AppLinkProps extends LinkProps {
@@ -9,7 +8,7 @@ interface AppLinkProps extends LinkProps {
   color?: Color
 }
 
-export const AppLink: FC<AppLinkProps> = (props) => {
+export const AppLink = (props: AppLinkProps) => {
   const {
     className,
     to,
@@ -20,7 +19,7 @@ export const AppLink: FC<AppLinkProps> = (props) => {
   return (
     <Link
       to={to}
-      className={cls([className, styles[color]])}
+      className={cn([className, styles[color]])}
       {...otherProps}
     >
       {children}

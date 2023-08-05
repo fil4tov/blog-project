@@ -1,4 +1,4 @@
-import React, { createContext, type FC, type ReactNode, useMemo, useState } from 'react'
+import { createContext, type ReactNode, useLayoutEffect, useMemo, useState } from 'react'
 
 export type Theme = 'dark' | 'light'
 
@@ -17,9 +17,19 @@ interface ThemeProviderProps {
   children?: ReactNode
 }
 
-export const ThemeProvider: FC<ThemeProviderProps> = ({ children }) => {
+export const ThemeProvider = ({ children }: ThemeProviderProps) => {
   const [theme, setTheme] = useState<Theme>(defaultTheme)
   const store = useMemo(() => ({ theme, setTheme }), [theme])
+
+  useLayoutEffect(() => {
+    const storageTheme = localStorage.getItem(LOCAL_STORAGE_THEME_KEY)
+    if (!storageTheme) {
+      localStorage.setItem(LOCAL_STORAGE_THEME_KEY, defaultTheme)
+      document.body.classList.add(defaultTheme)
+    } else {
+      document.body.classList.add(storageTheme)
+    }
+  }, [])
 
   return (
     <ThemeContext.Provider value={store}>

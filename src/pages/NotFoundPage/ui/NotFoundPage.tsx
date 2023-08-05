@@ -1,16 +1,15 @@
-import { type FC } from 'react'
-import { cls } from 'shared/lib/helpers'
+import { cn } from 'shared/lib/helpers'
 import { useTranslation } from 'react-i18next'
 
 interface NotFoundPageProps {
   className?: string
 }
 
-const NotFoundPage: FC<NotFoundPageProps> = ({ className }) => {
+const NotFoundPage = ({ className }: NotFoundPageProps) => {
   const { t } = useTranslation()
 
   return (
-    <div className={cls([className])}>
+    <div className={cn([className])}>
       <h1>{t('Страница не найдена')}</h1>
     </div>
   )

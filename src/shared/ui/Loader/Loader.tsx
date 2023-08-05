@@ -1,13 +1,12 @@
-import { type FC } from 'react'
-import { cls } from 'shared/lib/helpers'
+import { cn } from 'shared/lib/helpers'
 import styles from './Loader.module.scss'
 
 interface LoaderProps {
   className?: string
 }
 
-export const Loader: FC<LoaderProps> = ({ className }) => {
+export const Loader = ({ className }: LoaderProps) => {
   return (
-    <span className={cls([styles.Loader, className])}/>
+    <span className={cn([styles.Loader, className])}/>
   )
 }
